@@ -45,15 +45,8 @@ func generatePushID(ascending: Bool = true) -> String {
     
 }
 
-var arr = [String]()
-var time = Date().timeIntervalSince1970
-var count = 1000
-for n in 1...count {
-    let id = generatePushID()
-    arr.append(id)
-    print(id)
-}
-print((Date().timeIntervalSince1970 - time) / Double(count))
+// 0.00448s to generate an id
+print(generatePushID())
 
 
 
